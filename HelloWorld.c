@@ -9,13 +9,17 @@ int main(){
     char letter  = 'A';
     char word[] = "qwerty";
     bool isFun = true;
-
+    
+    // Print out the variables
     printf("%i is a number \n\"%c\" is a character \n\"%s\" is a string\n%f is a float\n%lf is a double\n%d is a boolean\n"
     , number, letter, word, floatno, doubleno, isFun);
     printf("Boolean evaluation results: %d\n", 10<7);
+
     /* Implicit conversion*/
     int myInt = 9.9973;
     printf("\nThe integer number is %d\n", myInt);
+    float myFloatInt = 9;
+    printf("The float number is %f\n", myFloatInt);
     float myFloat = 9.9973;
     printf("The float number is %f\n", myFloat);
 
