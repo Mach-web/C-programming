@@ -2,36 +2,68 @@
 
 int main(){
     // With 1 conditional statement
-    int number;
-    number = 10;
-    if(number > 0){
-        printf("Number is positive.\n");
+    int feeBalance = 10000;
+    if(feeBalance > 0){
+        printf("You have a fee Balance of: %i\n", feeBalance);
     }
 
-    // 2 conditions
-    float feeBal;
-    feeBal = 0;
-    if(feeBal > 0){
-        printf("You have a fee Balance of %.2f\n", feeBal);
+    // with 2 conditions
+    // Check if a number is positive or negative
+    int no1 = -89;
+    float no2 = 76.87;
+    if(no2 < 0){
+        printf("%f is a negative number.\n", no2);
     }
     else{
-        printf("You have no fee Balance.\n");
+        printf("%f is a positive number.\n", no2); 
     }
 
-    // More than 2 conditions
-    int feeBalance = 250000;
-    if(feeBalance >= 20000){
-        printf("You have a fee balance of greater than 20000\n");
+    // Check if several numbers are positive or negative
+    int number1;
+    const float number3 = -8.54;
+    number1 = 8;
+    if(number1 >= 0){
+        printf("%i is a positive number.\n", number1);
+    } 
+    else{
+        printf("%i is a negative number.\n", number1);
     }
-    else if(feeBalance >= 10000){
-        printf("You have a fee balance of greater than 10000\n");
-    }
-    else if(feeBalance >= 0){
-        printf("You have a fee balance of less than 10000\n");
+    if(number3 >= 0){
+        printf("%f is a positive number.\n", number3);
     }
     else{
-        printf("You have no fee balance\n");
+        printf("%f is a negative number.\n", number3);
     }
+
+    // if...else if
+    int day = 5;
+
+    if(day == 1){
+        printf("Today is Thursday.\n");
+    }
+    else if(day == 2){
+        printf("Today is Friday.\n");
+    }
+    else if(day == 3){
+        printf("Today is Saturday.\n");
+    }
+    else if(day == 4){
+        printf("Today is Sunday.\n");
+    }
+    else if(day == 5){
+        printf("Today is Monday.\n");
+    }
+    else if(day == 6){
+        printf("Today is Tuesday.\n");
+    }
+    else if(day == 7){
+        printf("Today is Wednesday.\n");
+    }
+    else{
+        printf("No day specified\n");
+    }
+ 
+
 }
 
 
