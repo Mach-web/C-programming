@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(){
     // With 1 conditional statement
@@ -62,8 +63,18 @@ int main(){
     else{
         printf("No day specified\n");
     }
- 
-
+    // Check which number is greater
+     int value1 = 12345;
+     int value2 = 23;
+     if(value1 == value2){
+        printf("%i is equal to %i\n", value1, value2);
+     }
+     else if(value1 > value2){
+        printf("%i is greater than %i\n", value1, value2);
+     }
+     else{
+        printf("%i is greater than %i\n", value2, value1);
+     }
 }
 
 
