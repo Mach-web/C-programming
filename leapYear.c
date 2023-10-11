@@ -31,6 +31,7 @@ if(leapYear){
 else{
     printf("%d is not a leap year\n", year);
 }
+return 0;
 }
 
 
