@@ -64,8 +64,8 @@ int main(){
         printf("No day specified\n");
     }
     // Check which number is greater
-     int value1 = 12345;
-     int value2 = 23;
+     int value1 = 45;
+     int value2 = 12;
      if(value1 == value2){
         printf("%i is equal to %i\n", value1, value2);
      }
