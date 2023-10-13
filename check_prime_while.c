@@ -3,24 +3,24 @@
 
 int main(){
     int i = 2, number;
-    bool prime;
+    bool prime = true;
     printf("Enter a number to check if its prime: ");
     scanf("%d", &number);
-
-while(number >= i){
-    if(number % i != 0){
-        prime = true;
+if(number == 1){
+    prime = false;
+}
+while(i < number){
+    if(number % i == 0){
+        prime = false;
         break;
     }
-    else{
-        if(number == i){
-            prime = true;
-        }
-        else{
-            prime = false;
-        }
-    }
     i++;
+    }
+if(prime){
+    printf("\n%d is a prime number.", number);
+}
+else{
+    printf("\n%d is not a prime number.", number);
 }
 return 0;
 }
