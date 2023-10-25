@@ -10,6 +10,7 @@ int main(){
         // Skip a line for every new loop
         printf("\n");
         for(j = 1;j <= multi_value;j++){
+            // Create a tab
             printf("%d\t", i * j);
         }
     }
