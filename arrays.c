@@ -1,10 +1,16 @@
 #include <stdio.h>
 
 int main(){
-int myNumber[]={25,50,75,100},i;
-myNumber[1] = 60;
-for(i=0; i <= 3;i++){
-    printf("%d\n",myNumber[i]);
+int myNumber[]={100, 10, 25, 4, 428, 8, 56, 17, 33, 11, 29};
+int i = 0, max = myNumber[0];
+while (myNumber[i])
+{
+    /* code */
+    if(max < myNumber[i]){
+        max = myNumber[i];
+    }
+    i++;
 }
-    return 0;
+printf("The maximum number is: %d\n", max);
+return 0;
 }
